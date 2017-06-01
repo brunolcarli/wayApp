@@ -1,0 +1,27 @@
+<ons-page id="menu">
+    <ons-list>
+        <!--=====================================
+        //         ITENS DO MENU LATERAL
+        ======================================-->
+        <ons-list-header>Destaques</ons-list-header>
+        <ons-list-item data-filter="FAQ" tappable onclick="faq()">FAQ</ons-list-item>
+        <ons-list-item data-filter="UltimosConsumos" tappable>Últimos Consumos</ons-list-item>
+        <ons-list-item data-filter="OfertasProximas" tappable>Ofertas próximas</ons-list-item>
+        
+        <ons-list-header>Acesso</ons-list-header>
+        <ons-list-item data-filter="Login" tappable onclick="loginScreen()">Log In</ons-list-item>
+        <ons-list-item data-filter="Cadastro" tappable onclick="cadastro()">Cadastro</ons-list-item>
+        <ons-list-item data-filter="Inicio" tappable onclick="inicio()">Início</ons-list-item>
+        <ons-list-item data-filter="Perfil" tappable>Perfil</ons-list-item>
+        
+        <ons-list-header>Promoções</ons-list-header>
+        <ons-list-item data-filter="Parceiros" tappable>Parceiros</ons-list-item>
+        <ons-list-item data-filter="Pesquisar" tappable>Pesquisar</ons-list-item>
+        
+        <ons-list-header>QR</ons-list-header>
+        <ons-list-item data-filter="GeraQR" tappable onclick="gerarQRCode()">Gerar QR Code</ons-list-item>
+        <!--
+        <ons-list-item data-filter="EraseDb" tappable onclick="eraseStorage()">Apagar DB (debug) </ons-list-item>
+        -->
+    </ons-list>
+</ons-page>

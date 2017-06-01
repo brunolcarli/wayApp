@@ -1,0 +1,65 @@
+/*/////////////////////////////////////
+// @author: Bruno L. Carli          //
+// @contact: brunolcarli@gmail.com //
+//////////////////////////////////*/
+
+#botoes_inferiores {
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+}
+
+/*/////////////////////////////
+//       MAIN FRAME         //
+///////////////////////////*/
+
+#main_frame {
+    position: absolute;
+    top:5px;
+    right: 5px;
+    left:5px;
+    bottom: 100px;
+
+}
+
+#main_header{
+    position: absolute;
+    top:1%;
+    right: 5px;
+    left: 5px;
+    bottom:85%;
+
+}
+
+#main_upframe {
+    position: absolute;
+    top:16%;
+    right: 5px;
+    left: 5px;
+    bottom: 39%;
+}
+
+#main_downframe {
+    position: absolute;
+    top:62%;
+    right: 5px;
+    left: 5px;
+    bottom: 1%;
+}
+
+#main_footer {
+    position: fixed;
+    bottom:5%;
+    top: 83%;
+    left: 2%;
+    right: 45%;
+}
+
+#qrframe {
+    position: absolute;
+    top:20%;
+    right: 5%;
+    left:11%;
+    bottom: 5%;
+    z-index: -1;
+}

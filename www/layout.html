@@ -1,0 +1,102 @@
+<ons-page id="layout">
+        <!--==================================================
+        // ons-toolbar cria uma caixa de ferramentas no topo
+        ===================================================-->
+    <ons-toolbar>
+        <!--======================================================
+        // Dentro desta caixa de ferramentas teremos tres divisoes
+        // contendo um botao de cada lado e o titulo no centro
+        =======================================================-->
+        <div class="left">
+            <ons-toolbar-button id="splitter-toggle">
+                <ons-icon icon="fa-bars"></ons-icon>
+            </ons-toolbar-button>
+        </div>
+        
+        <div class="center">WayAPP</div>
+        
+        <div class="right">
+            <ons-icon icon="md-face"  size="35px"></ons-icon>
+        </div>
+    </ons-toolbar> <!-- FIM DA BARRA DE FERRAMENTAS -->
+    
+    <!--==============================================================
+    //                     TELA PRINCIPAL
+    ================================================================-->
+    
+    <div id="main_frame">
+
+        <!-- ++++++++++++++++++++++++++++++++>
+        <+            Frame Superior        +>
+        <++++++++++++++++++++++++++++++++++-->
+        <div id="main_header">
+            <h3 align="center"></h3>
+            
+        </div>
+
+        <!-- ++++++++++++++++++++++++++++++++>
+        <+             UpFrame              +>
+        <++++++++++++++++++++++++++++++++++-->
+        <div id="main_upframe">
+            <div style="text-align: center; margin-top: 30px;">
+                <p>
+                    <ons-input id="username" modifier="underbar" placeholder="Username" float></ons-input>   
+                </p>
+                <p>
+                    <ons-input id="password" modifier="underbar" type="password" placeholder="Password" float></ons-input>
+                </p>
+                <p style="margin-top: 30px;">
+                    <ons-button onclick="login()">Log in</ons-button>
+                </p>
+            </div>
+        </div>
+        
+        <!-- ++++++++++++++++++++++++++++++++>
+        <+            Downframe             +>
+        <++++++++++++++++++++++++++++++++++-->
+        <div id="main_downframe">
+
+        </div>
+
+        <!-- ++++++++++++++++++++++++++++++++>
+        <+            Footer                +>
+        <++++++++++++++++++++++++++++++++++-->
+        <div id="main_footer"></div>
+        
+        
+        <!-- ++++++++++++++++++++++++++++++++>
+        <+            QR AREA                +>
+        <++++++++++++++++++++++++++++++++++-->
+        <div id="qrframe"></div>       
+        
+    </div> <!-- FIM MAIN FRAME -->
+    
+    <!-- =============================================================
+    //           DIV PARA OS BOTOES INFERIORES
+    ===============================================================-->
+    
+    <div id="botoes_inferiores">
+        <ons-toolbar-button>
+              <ons-speed-dial position="bottom right" direction="up">
+                <ons-fab>
+                  <ons-icon icon="md-plus"></ons-icon>
+                </ons-fab>
+                <ons-speed-dial-item>
+                  <ons-icon icon="md-twitter"></ons-icon>
+                </ons-speed-dial-item>
+                <ons-speed-dial-item>
+                  <ons-icon icon="md-facebook"></ons-icon>
+                </ons-speed-dial-item>
+                <ons-speed-dial-item>
+                  <ons-icon icon="md-google-plus"></ons-icon>
+                </ons-speed-dial-item>
+              </ons-speed-dial>
+            <!--
+            <ons-fab>
+                <ons-icon icon="md-plus" onclick="cadasto()"></ons-icon>
+            </ons-fab>
+            -->
+        </ons-toolbar-button>
+    </div> <!-- FIM DIV BOTOES INFERIORES -->
+    
+</ons-page>
